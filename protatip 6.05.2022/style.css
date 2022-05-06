@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DEB887;
+}
+.menu-bar{
+    background-color: #5b71b5;
+    text-align: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 90px;px;
+    margin: 10px;
+}
