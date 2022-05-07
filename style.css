@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.678);
+}
+.menu-bar{
+    background-color: rgba(62, 60, 60, 0.701);
+    text-align: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:rgba(245, 245, 245, 0.678);
+}
+.active,.menu-bar ul li:hover{
+    background-color:#d4c995;
+    border-radius: 10px;
+    text-align: center;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
