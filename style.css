@@ -31,3 +31,34 @@ body{
 .menu-bar .fa{
     margin-right: 8px;
 }
+.login-form{
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    height: 300px;
+}
+.login-form input{
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+.login-form .inputs {
+    margin: 10px;
+    margin-left:  55px;
+    display: block;
+    text-align: center;
+}
+.login-form h1{
+    color:whitesmoke;
+}
+.login-form .buttons{
+    height: 50px;
+}
