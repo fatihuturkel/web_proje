@@ -1,37 +1,113 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+}
+a :hover{
+    color:white;
 }
 body{
     background-color: rgba(245, 245, 245, 0.678);
 }
-.menu-bar{
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     background-color: rgba(34, 33, 33, 0.877);
-    text-align: right;
+    overflow: auto;
 }
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
+ 
+ul li {
+    float: left;
+    border-bottom: 3px solid #4fb99f;
+    
 }
-.menu-bar ul li{
-    width: 30%;
-    width: min-content;
-    margin: 15px;
-    padding: 10px;
-}
-.menu-bar ul li a{
+ 
+ul li a {
+    display: inline-block;
+    padding: 12px 24px;
     text-decoration: none;
-    color:rgba(245, 245, 245, 0.678);
+    color: #fff;
+    font-size: 18px;
 }
-.active,.menu-bar ul li:hover{
-    background-color:#d4c995;
-    border-radius: 10px;
-    text-align: center;
+ 
+ul li.active {
+    background-color: rgb(21, 135, 148);
+    border-bottom: 3px solid #f2b134;
 }
-.menu-bar .fa{
-    margin-right: 8px;
+ 
+ul li:hover(.active) {
+    background-color: #068587;
+    border-bottom: 3px solid #f2b134;
+    
 }
+ 
+.hamburger-btn {
+    display: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: #068587;
+    float: right;
+}
+ 
+.hamburger-btn .bar1, .hamburger-btn .bar2, .hamburger-btn .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+ 
+.hamburger-change .bar1 {
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+ 
+.hamburger-change .bar2 {
+    /*IE8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*IE 5-7*/
+    filter: alpha(opacity=0);
+    /*Modern Browsers*/
+    opacity: 0;
+}
+ 
+.hamburger-change .bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+    }
+    
+    ul li {
+        float: none;
+        border-bottom: none;
+        border-left: 6px solid #4fb99f;
+    }
+    
+    ul li.active {
+        border-bottom: none;
+        border-left: 6px solid #f2b134;
+    }
+    
+    ul li:hover:not(.active) {
+        border-bottom: none;
+        border-left: 6px solid #f2b134;
+    }
+    
+    .hamburger-btn {
+        display: inline-block;
+    }
+}
+/* navbar kodları bitiş/
+
+/* login formu kodları başlangıç*/
 .login-form{
     width: 350px;
     padding: 20px;
@@ -64,7 +140,9 @@ body{
 .login-form .buttons{
     height: 50px;
 }
+/* login formu kodları bitiş*/
 
+/* okul sayfası kodları başlangıç*/
 .tum-okullar {
   margin: 0;
   padding: 5px;
@@ -109,3 +187,5 @@ img {
     -webkit-box-shadow: 0 0 10px #999;
     box-shadow: 0 0 10px #999;
     }
+
+/* okul sayfası kodları bitiş*/

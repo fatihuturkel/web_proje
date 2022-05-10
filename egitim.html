@@ -3,21 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".hamburger-btn").click(function () {
+                    $(".hamburger-btn").toggleClass("hamburger-change");
+                    $("ul").finish().slideToggle(500);
+            });
+            $("li").click(function () {
+                $("li").removeClass("active");
+                $(this).addClass("active");
+           });
+        });
+        </script>
+
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <title>Eğitim Hayatım</title>
     </head>
     <body>
-        <div class="menu-bar">
+      <div>
         <ul>
-            <li><a href="web-proje main.html"><i class="fa fa-home"></i>Hakkımda</a></li>
-            <li><a href="#"><i class="fa fa-graduation-cap"></i>Eğitim</a></li>
-            <li><a href="#"><i class="fa fa-globe"></i>Şehrim</a></li>
-            <li><a href="#"><i class="fa fa-paper-plane"></i>İletişim</a></li>
-            <li><a href="login.html"><i class="fa fa-user-circle"></i>Giriş</a></li>
+            <li >
+                <a href="main.html"><i class="fa fa-home"></i>   Hakkımda</a>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fa fa-graduation-cap"></i>   Eğitim</a>
+            </li>
+            <li>
+                <a href="sehir.html"><i class="fa fa-globe"></i>   Şehrim</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-paper-plane"></i>   İletişim</a>
+            </li>
+            <li>
+                <a href="login.html"><i class="fa fa-user-circle"></i>   Giriş</a>
+            </li>
         </ul>
+        <div class="hamburger-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-        
+      </div>
+       
         <main>
             <article class="tum-okullar">
             <h1>Eğitim Hayatım</h1>
@@ -39,31 +69,29 @@
             </article>
           </article>  
         </main>
-        <section>
+        <figure>
           <table class="image-table">
-            <tbody>
-            <tr>
-            <td>
-              <img src="./img/75yılilkokulu.jpg" alt="75. Yıl İlkokulu">
-            </td>
-            <td>
-              <img src="./img/ihsanzakirogluortaokulu.jpg" alt="İhsan Zakiroğlu Ortaokulu">
-            </td>
-            <td>
-              <img src="./img/ecaelginkanlisesi.jpg" alt="Elginkan Anadolu Lisesi">
-            </td>
-            <td>
-              <img src="./img/saüfoto1.jpg" alt="Sakarya Üniversitesi">
-            </td>
-            <td>
-              <img src="./img/saüfoto2.jpg" alt="Bilişim Faültesi">
-            </td>
-            </tr>
-            </tbody>
-            </table>      
-        </section>
-        
-
+          <tbody>
+          <tr>
+          <td>
+            <img src="./img/75yılilkokulu.jpg" alt="75. Yıl İlkokulu">
+          </td>
+          <td>
+            <img src="./img/ihsanzakirogluortaokulu.jpg" alt="İhsan Zakiroğlu Ortaokulu">
+          </td>
+          <td>
+            <img src="./img/ecaelginkanlisesi.jpg" alt="Elginkan Anadolu Lisesi">
+          </td>
+          <td>
+            <img src="./img/sau.jpg" alt="Sakarya Üniversitesi">
+          </td>
+          <td>
+            <img src="./img/bilgisayarfakültesi.jpg" alt="Bilişim Faültesi">
+          </td>
+          </tr>
+          </tbody>
+          </table> 
+        </figure>
     </body>
 
 </html>

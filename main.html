@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".hamburger-btn").click(function () {
+                    $(".hamburger-btn").toggleClass("hamburger-change");
+                    $("ul").finish().slideToggle(500);
+            });
+            $("li").click(function () {
+                $("li").removeClass("active");
+                $(this).addClass("active");
+           });
+        });
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Hakkımda</title>  
+    </head>
+    <body>
+      <div>
+        <ul>
+            <li class="active">
+                <a href="#"><i class="fa fa-home"></i>   Hakkımda</a>
+            </li>
+            <li >
+                <a href="egitim.html"><i class="fa fa-graduation-cap"></i>   Eğitim</a>
+            </li>
+            <li>
+                <a href="sehir.html"><i class="fa fa-globe"></i>   Şehrim</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-paper-plane"></i>   İletişim</a>
+            </li>
+            <li>
+                <a href="login.html"><i class="fa fa-user-circle"></i>   Giriş</a>
+          </li>
+          </ul>
+          <div class="hamburger-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        
+    </body>
+</html>
