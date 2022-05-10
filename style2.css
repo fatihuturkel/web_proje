@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.678);
+}
+.menu-bar{
+    background-color: rgba(34, 33, 33, 0.877);
+    text-align: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 30%;
+    width: min-content;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:rgba(245, 245, 245, 0.678);
+}
+.active,.menu-bar ul li:hover{
+    background-color:#d4c995;
+    border-radius: 10px;
+    text-align: center;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.login-form{
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    height: 300px;
+}
+.login-form input{
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+.login-form .inputs {
+    margin: 10px;
+    margin-left: 30px;
+    display: block;
+    text-align: center;
+    width: 250px;
+}
+.login-form h1{
+    color:whitesmoke;
+}
+.login-form .buttons{
+    height: 50px;
+}
+
+.tum-okullar {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+  
+}
+
+.tum-okullar > h1, .okul {
+  margin: 10px;
+  padding: 5px;
+}
+
+.tum-okullar h1{
+    text-align: center;
+    
+}
+
+.okul {
+  background: white;
+}
+
+.okul  > h2, p {
+  margin: 20px;
+  font-size: 115%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    }
+.image-table {
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-collapse: separate;
+    border-spacing: 6px;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    }
+.image-table img {
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    }
