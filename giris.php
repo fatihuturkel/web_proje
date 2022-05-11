@@ -13,7 +13,7 @@
                 header ('Location: /web/login.html');
             }
             else if($_Email==$kullanıcı and $pass==$sifre){
-                echo 'Hoşgeldiniz ' ,$sifre; 
+                echo 'Hoşgeldiniz G211210016';
             }
             else{
                 header ('Location: /web/login.html');
@@ -24,7 +24,7 @@
                 header ('Location: /login.html');
             }
             else if($_Email==$kullanıcı and $pass==$sifre){
-                echo 'Hoşgeldiniz ' ,$sifre; 
+                echo 'Hoşgeldiniz G211210016';
             }
             else{
                 header ('Location: /login.html');

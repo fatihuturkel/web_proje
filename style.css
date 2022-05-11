@@ -5,7 +5,7 @@ a :hover{
     color:white;
 }
 body{
-    background-color: rgba(245, 245, 245, 0.678);
+    background-color: rgba(245, 245, 245, 0.616);
 }
 
 ul {
@@ -33,6 +33,11 @@ ul li a {
 ul li.active {
     background-color: rgb(21, 135, 148);
     border-bottom: 3px solid #f2b134;
+}
+
+ul li  a.beyazcizgisiz:hover{
+    color: white;
+    text-decoration: none;
 }
  
 ul li:hover(.active) {
@@ -104,6 +109,10 @@ ul li:hover(.active) {
     .hamburger-btn {
         display: inline-block;
     }
+}
+
+div.navbar-texture-correction{
+    line-height: 1;
 }
 /* navbar kodları bitiş/
 
@@ -189,3 +198,30 @@ img {
     }
 
 /* okul sayfası kodları bitiş*/
+/* sehir sayfası kodları başlangıç*/
+.tum-sehirler {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+    
+  }
+  
+  .tum-sehirler > h1, .okul {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .tum-sehirler h1{
+      text-align: center;
+      
+  }
+  
+  .sehir {
+    background: white;
+  }
+  
+  .sehir  > h2, p {
+    margin: 20px;
+    font-size: 130%;
+  }
+  /* sehir sayfası kodları bitis*/
