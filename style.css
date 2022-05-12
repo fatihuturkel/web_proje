@@ -220,8 +220,52 @@ img {
     background: white;
   }
   
-  .sehir  > h2, p {
-    margin: 20px;
+  .sehir  > h2, p{
+    margin: 30px;
     font-size: 130%;
   }
+  .sehir >h3{
+      margin-top: 60px;
+      margin-left: 30px;
+      font-size: 130%;
+      font-weight: 600;
+  }
+  .sehir >h2{
+      margin-top: 55px;
+      font-weight: 800;
+  }
   /* sehir sayfası kodları bitis*/
+
+  /* Egitim sayfası kodları baslangıc*/
+  .tum-mekanlar {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+    
+  }
+  
+  .tum-mekanlar > h1, .okul {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .tum-mekanlar h1{
+      text-align: center;
+      
+  }
+  
+  .mekan {
+    background: white;
+  }
+  
+  .mekan  > h2, p {
+    margin: 20px;
+    font-size: 115%;
+  }
+  /*miras sayfası kodları bitis*/
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
