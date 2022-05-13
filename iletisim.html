@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".hamburger-btn").click(function () {
+                    $(".hamburger-btn").toggleClass("hamburger-change");
+                    $("ul").finish().slideToggle(500);
+            });
+            $("li").click(function () {
+                $("li").removeClass("active");
+                $(this).addClass("active");
+           });
+        });
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Hakkımda</title>  
+        <script>
+            function validate(){
+                var first= document.forms["myform"]["fname"].value;
+                var last= document.forms["myform"]["lname"].value;
+                var email= document.forms["myform"]["email"].value;
+                var cinsiyet= document.forms["myform"]["cinsiyet"].value;
+                var address = document.forms["myform"]["address"].value;
+                var state= document.forms["myform"]["state"].value;
+            if(first == ""){
+                alert("İsminizi giriniz");
+                    return false;
+            }
+            if(!isNaN(first)){
+                    alert("İsim harflerden oluşmalıdır.");
+                    return false;
+            }
+            if(last == ""){
+                 alert("Soyadınızı giriniz");
+                 return false;  
+            }
+            
+            if(!isNaN(last)){
+                    alert("Soy isim harflerden oluşmalıdır.");
+                    return false;
+            }
+                
+            var at = email.indexOf("@");
+            var dot = email.lastIndexOf(".");
+            
+            if(at<1||dot<at+2||dot+2 >= email.lenght){
+                alert("E-mailinizi giriniz");
+                return false;
+                }
+            if(cinsiyet==""){
+                alert("Cinsiyetinizi seçiniz");
+                return false;
+            }
+            if(address == ""){
+                alert("Adresinizi giriniz");
+                return false;
+            }
+            if(state=="Şehir seçiniz"){
+                alert("Şehrinizi giriniz");
+                return false;
+            }
+            } </script>
+    </head>
+    <body>
+      <div>
+        <ul>
+            <li>
+                <a href="#"><i class="fa fa-home"></i>   Hakkımda</a>
+            </li>
+            <li>
+                <a href="ilgialanım.html"><i class="fa fa-plus-circle"></i>   İlgi Alanlarım</a>
+            </li>
+            <li >
+                <a href="egitim.html"><i class="fa fa-graduation-cap"></i>   Eğitim</a>
+            </li>
+            <li>
+                <a href="sehir.html"><i class="fa fa-globe"></i>   Şehrim</a>
+            </li>
+            <li >
+                <a href="miras.html" ><i class="fa fa-university"></i>   Mirasımız</a>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fa fa-paper-plane"></i>   İletişim</a>
+            </li>
+            <li>
+                <a href="login.html"><i class="fa fa-user-circle"></i>   Giriş</a>
+            </li>
+            
+          </ul>
+          <div class="hamburger-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <br><br><br>
+        
+        
+   <center>
+       <div class="GenisGriDiv">
+        <h1 style="color: whitesmoke;">İletişim Formu</h1>
+        <br>
+        <form name="myform" method="post" action="iletisim.php"   onSubmit="return validate()">
+        <table>
+            <tr>
+                        <td> İsim </td>
+                        <td> <input type="text" name="fname" maxlength="20"/></td>
+                        </tr>
+            <tr>
+                <td> Soyisim </td>
+                <td> <input type="text" name="lname" maxlength="20"/></td>
+            </tr>             
+            <tr>
+                <td> Email </td>
+                <td> <input type="text" name="email" maxlength="40"/></td>
+            </tr>
+            <tr>
+                <td> Cinsiyet </td>
+                <td>Erkek<input type="radio" name="cinsiyet" value="Erkek"/>
+                Kadın<input type="radio" name="cinsiyet" value="Kadın"/></td>
+            </tr>
+            <tr>
+                <td>Adres</td>
+                <td><textarea name="address" placeholder="Adresinizi giriniz" cols="50"></textarea></td>
+            </tr>             
+            <tr>
+                <td>Şehir</td>
+                <td><select id="state" name="state">
+                    <option value="Şehir seçiniz" selected>Bir şehir seçiniz</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Bursa">Bursa</option>
+                    <option value="Antalya">Antalya</option>  
+                </select></td>
+            </tr>
+            <tr>
+                <td> Ülke</td>
+                <td> <input type="text" value="Türkiye" name="country" readonly="readonly"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                <input type="submit" name="submit" value="Gönder"/></td>
+            </tr>
+        </table></form>
+       </div> 
+        </center>
+    </body>
+</html>
