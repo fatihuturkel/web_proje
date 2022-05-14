@@ -269,7 +269,7 @@ img {
     margin-right: auto;
     width: 60%;
   }
-  .GenisGriDiv{
+  div.GenisGriDiv{
     width: auto;
     padding: 20px;
     text-align: center;
@@ -280,5 +280,14 @@ img {
     transform: translate(-50%,-50%);
     border-radius: 10px;
     height: 300px;
+  }
+
+  .hakkımdagiris{
+      text-align: center;
+      margin-top: 5%;
+  }
+  .tanıtıcı{
+      background-color: white;
+      border-radius: 10px;
   }
   
