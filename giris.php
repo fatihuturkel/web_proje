@@ -10,25 +10,30 @@
     if($_POST['gonder']){
         if(file_exists($path)){
             if(empty($_Email)or empty($pass)){
-                header ('Location: /web/login.html');
-            }
-            else if($_Email==$kullanıcı and $pass==$sifre){
-                echo 'Hoşgeldiniz G211210016';
-            }
-            else{
-                header ('Location: /web/login.html');
-            }
-        }
-        else{
-            if(empty($_Email)or empty($pass)){
-                header ('Location: /login.html');
+                echo "Yanlış Giriş yapıldı.";
+                echo "<br><a href ='login.html'>Ana Menü</a>";
             }
             else if($_Email==$kullanıcı and $pass==$sifre){
                 echo 'Hoşgeldiniz G211210016';
                 echo "<br><a href ='index.html'>Ana Menü</a>";
             }
             else{
-                header ('Location: /login.html');
+                echo "Yanlış Giriş yapıldı.";
+                echo "<br><a href ='login.html'>Ana Menü</a>";
+            }
+        }
+        else{
+            if(empty($_Email)or empty($pass)){
+                echo "Yanlış Giriş yapıldı.";
+                echo "<br><a href ='login.html'>Ana Menü</a>";
+            }
+            else if($_Email==$kullanıcı and $pass==$sifre){
+                echo 'Hoşgeldiniz G211210016';
+                echo "<br><a href ='index.html'>Ana Menü</a>";
+            }
+            else{
+                echo "Yanlış Giriş yapıldı.";
+                echo "<br><a href ='login.html'>Ana Menü</a>";
             }
         }
         
