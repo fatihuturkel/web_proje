@@ -25,6 +25,7 @@
             }
             else if($_Email==$kullanıcı and $pass==$sifre){
                 echo 'Hoşgeldiniz G211210016';
+                echo "<br><a href ='index.html'>Ana Menü</a>";
             }
             else{
                 header ('Location: /login.html');
