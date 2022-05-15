@@ -272,7 +272,6 @@ img {
   div.GenisGriDiv{
     width: auto;
     padding: 20px;
-    text-align: center;
     background-color: grey;
     position: absolute;
     top: 50%;
@@ -280,6 +279,7 @@ img {
     transform: translate(-50%,-50%);
     border-radius: 10px;
     height: 300px;
+    color:#fff;
   }
 
   .hakkımdagiris{
@@ -291,3 +291,6 @@ img {
       border-radius: 10px;
   }
   
+  div.GenisGriDiv td .genisbar{
+      width: 90%;
+  }
